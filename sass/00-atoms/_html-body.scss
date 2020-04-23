@@ -1,0 +1,26 @@
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $fontFamilyBase;
+  font-display: auto;
+  background-color: $white;
+
+  @include media-breakpoint-down(sm) {
+    @include fluid-type(320px, 768px, 15px, 18px);
+  }
+  @include media-breakpoint-only(md) {
+    @include fluid-type(768px, 1070px, 16px, 18px);
+  }
+  @include media-breakpoint-only(lg) {
+    @include fluid-type(1140px, 1400px, 15px, 17px);
+  }
+  @include media-breakpoint-up(xl) {
+    @include fluid-type(1401px, 1880px, 15px, 18px);
+  }
+  @include media-breakpoint-up(xxl) {
+    @include fluid-type(1881px, 2100px, 16px, 20px);
+  }
+}

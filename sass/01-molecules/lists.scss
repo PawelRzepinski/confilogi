@@ -1,0 +1,49 @@
+.list__custom {
+  list-style: none;
+
+  li {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left:-15px;
+      top: 6px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    &:before {
+      border-width: 5px 0 5px 10px;
+      border-color: transparent transparent transparent $green;
+    }
+
+    &:after {
+      border-width: 5px 0 5px 3px;
+      border-color: transparent transparent transparent $white;
+    }
+  }
+}
+
+.list--indent {
+  list-style: none;
+  li {
+    position: relative;
+    text-indent: 1.25rem;
+
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: '\f005';
+      position: absolute;
+      left: -22px;
+      top: -3px;
+      font-style: normal;
+      font-variant: normal;
+      display: inline-block;
+      color: $green;
+    }
+  }
+}

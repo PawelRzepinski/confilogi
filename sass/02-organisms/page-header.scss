@@ -1,0 +1,11 @@
+.page__header {
+  border: 1px solid $red-dark;
+  margin-bottom: 0.625rem;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 1.25rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

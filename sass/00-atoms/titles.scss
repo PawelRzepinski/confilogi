@@ -1,0 +1,18 @@
+.titleBackground {
+  font-size: $font-17;
+  width: fit-content;
+  padding: 0 .2rem;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-21;
+  }
+}
+
+.titleBackground--yellow {
+  background: $yellow;
+  color: $red;
+}
+
+.titleBackground--green {
+  background: $green;
+  color: $yellow;
+}

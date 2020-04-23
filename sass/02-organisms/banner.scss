@@ -1,0 +1,102 @@
+.banner {
+  position: relative;
+  margin: 1.25rem 0;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 1.875rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__header {
+    text-align: center;
+    p {
+      margin: 0;
+    }
+    h6 {
+      color: $red;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: center;
+    }
+    .img__wrapper {
+      position: relative;
+      width: 50%;
+    }
+
+    .img__sign {
+      position: absolute;
+      bottom: 1rem;
+      left: 2.5rem;
+      width: 5rem;
+      height: 5rem;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &__footer {
+    padding: .5rem;
+    h2,h5, p {
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      font-weight: $bold-weight;
+      span {
+        text-decoration: line-through;
+        font-size: $font-28;
+        font-weight: $regular-weight;
+      }
+    }
+
+    &--bg {
+      background-color: rgba(#FFD047, .4);
+    }
+  }
+}
+
+.banner--customBorder {
+  font-family: $fontFamilySecond;
+  box-sizing: border-box;
+  padding: 2.5rem;
+  background-color: #f8fff4;
+  border: 30px solid transparent;
+  border-image: url("./image/border.jpg") 25% round;
+
+
+  .banner__title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: $green;
+  }
+}
+
+.banner--signature {
+  max-width: 30%;
+  height: auto;
+  margin: 1.875rem 0 0 auto;
+
+  .sign {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+  }
+  .img__wrapper {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+

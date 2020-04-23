@@ -1,0 +1,24 @@
+.boxCounter {
+  margin: 1.25rem 0;
+  z-index: 2;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 12.500rem;
+  }
+  @include media-breakpoint-up(xl) {
+    right: 10%;
+  }
+
+  h6 {
+    font-weight: $semi-bold-weight;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: $medium-weight;
+    font-size: $font-86;
+    text-align: center;
+  }
+}

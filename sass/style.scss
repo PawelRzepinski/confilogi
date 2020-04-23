@@ -1,0 +1,85 @@
+/* MIXINS
+--------------------------------------------------------------------------------------*/
+@import "mixins/typofluidlock";
+
+/* BOOTSTRAP
+--------------------------------------------------------------------------------------*/
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/functions";
+
+
+/* VARIABLES
+-----------------*/
+@import "./global/variables-main"; // zawsze wyżej niż variables - per project
+@import './global/variables'; //  bootstrap!
+/*---------------*/
+
+
+/* files from node_modules/bootstrap/variables */
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+//@import "~bootstrap/scss/type";
+//@import "~bootstrap/scss/images";
+//@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+//@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+//@import "~bootstrap/scss/button-group";
+//@import "~bootstrap/scss/input-group";
+//@import "~bootstrap/scss/custom-forms";
+//@import "~bootstrap/scss/nav";
+//@import "~bootstrap/scss/navbar";
+//@import "~bootstrap/scss/card";
+//@import "~bootstrap/scss/breadcrumb";
+//@import "~bootstrap/scss/pagination";
+//@import "~bootstrap/scss/badge";
+//@import "~bootstrap/scss/jumbotron";
+//@import "~bootstrap/scss/alert";
+//@import "~bootstrap/scss/progress";
+//@import "~bootstrap/scss/media";
+//@import "~bootstrap/scss/list-group";
+//@import "~bootstrap/scss/close";
+//@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+//@import "~bootstrap/scss/popover";
+//@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+//@import "~bootstrap/scss/print";
+
+
+/* GLOBAL
+--------------------------------------------------------------------------------------*/
+@import './global/reset';
+
+/* 00 - ATOMS
+--------------------------------------------------------------------------------------*/
+@import "00-atoms/typography";
+@import "00-atoms/img";
+@import "00-atoms/titles";
+
+/* 01 - MOLECULES
+--------------------------------------------------------------------------------------*/
+@import "01-molecules/lists";
+@import "01-molecules/alert-area";
+@import "01-molecules/box-counter";
+
+/* 02 - ORGANISMS
+--------------------------------------------------------------------------------------*/
+@import "02-organisms/page-header";
+@import "02-organisms/banner";
+@import "02-organisms/page-footer";
+@import "02-organisms/sideBox";
+
+/* 03 - TEMPLATES
+--------------------------------------------------------------------------------------*/
+@import "03-templates/page";
+@import "03-templates/form-section";
+
+/* 04 - PAGES
+--------------------------------------------------------------------------------------*/
+/* HELPERS
+--------------------------------------------------------------------------------------*/

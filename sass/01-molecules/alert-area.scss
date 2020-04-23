@@ -1,0 +1,22 @@
+.alert__area {
+  position: relative;
+  padding-left: 2.5rem;
+  margin: 1.875rem 0;
+  @include media-breakpoint-up(lg) {
+    margin: 2.5rem 0;
+  }
+
+  i {
+    content: 'f12a';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-15deg);
+    font-size: $font-52;
+    color: $red;
+  }
+
+  h3.sectionText__title {
+    margin-bottom: 0;
+  }
+}

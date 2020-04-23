@@ -1,0 +1,301 @@
+/**************************
+*
+*  Font System
+*
+**************************/
+$fontFamilyBase: 'Arial', sans-serif;
+$fontFamilySecond: 'Times New Roman', serif;
+
+// Font Size
+$font-8: 0.500rem;
+$font-9: 0.563rem;
+$font-10: 0.625rem;
+$font-11: 0.688rem;
+$font-12: 0.750rem;
+$font-13: 0.813rem;
+$font-14: 0.875rem;
+$font-15: 0.938rem;
+$font-16: 1rem;
+$font-17: 1.063rem;
+$font-18: 1.125rem;
+$font-19: 1.188rem;
+$font-20: 1.250rem;
+$font-21: 1.313rem;
+$font-22: 1.375rem;
+$font-23: 1.438rem;
+$font-24: 1.5rem;
+$font-25: 1.563rem;
+$font-26: 1.625rem;
+$font-27: 1.688rem;
+$font-28: 1.750rem;
+$font-30: 1.875rem;
+$font-31: 1.938rem;
+$font-32: 2.000rem;
+$font-34: 2.125rem;
+$font-35: 2.188rem;
+$font-36: 2.250rem;
+$font-38: 2.375rem;
+$font-39: 2.438rem;
+$font-40: 2.500rem;
+$font-41: 2.563rem;
+$font-42: 2.625rem;
+$font-46: 2.875rem;
+$font-47: 2.938rem;
+$font-48: 3rem;
+$font-50: 3.125rem;
+$font-52: 3.250rem;
+$font-56: 3.500rem;
+$font-63: 3.938rem;
+$font-78: 4.875rem;
+$font-79: 4.938rem;
+$font-80: 5rem;
+$font-86: 5.375rem;
+$font-140: 8.750rem;
+
+// Font Weight
+
+$thin-weight:             100;
+$extra-light-weight:      200;
+$light-weight:            300;
+$regular-weight:          400;
+$medium-weight:           500;
+$semi-bold-weight:        600;
+$bold-weight:             700;
+$extra-bold-weight:       800;
+$black-weight:            900;
+
+
+
+$global-transition-time: 0.3s;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Color system
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$red-dark:        #621706;
+$green-bg:        #ddefc4;
+$form-gray:       #F9F9F9;
+$form-gray-dark:  #aeaeae;
+
+
+// -------------- -------------- --------------
+//  normal
+// -------------- -------------- --------------
+
+$color-global-primary: #014584;
+$color-global-primary-dark-01: #21314B;
+$color-global-text: #04203A;
+
+$color-global-gray-01: #F4F7FB;
+$color-global-gray-02: #E8E8E8;
+$color-global-gray-03: #F8F8F8;
+
+$color-aqua: #00A0E3;
+$color-spa: #EC008C;
+$color-fit: #EE2F53;
+$color-greenv: #81BE76;
+$color-centrum: #3A4A65;
+
+// -------------- -------------- --------------
+//  bootstrap
+// -------------- -------------- --------------
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+                (
+                        "100": $gray-100,
+                        "200": $gray-200,
+                        "300": $gray-300,
+                        "400": $gray-400,
+                        "500": $gray-500,
+                        "600": $gray-600,
+                        "700": $gray-700,
+                        "800": $gray-800,
+                        "900": $gray-900
+                ),
+                $grays
+);
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: $color-spa !default;
+$red: $color-fit !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: $color-greenv !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+                (
+                        "blue": $blue,
+                        "indigo": $indigo,
+                        "purple": $purple,
+                        "pink": $pink,
+                        "red": $red,
+                        "orange": $orange,
+                        "yellow": $yellow,
+                        "green": $green,
+                        "teal": $teal,
+                        "cyan": $cyan,
+                        "white": $white,
+                        "gray": $gray-600,
+                        "gray-dark": $gray-800
+                ),
+                $colors
+);
+
+$primary: $color-aqua !default;
+$secondary: $color-global-text !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $color-global-gray-02 !default;
+$dark: $gray-800 !default; /**/
+
+$body-color: $color-global-text !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "secondary": $secondary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "light": $light,
+                        "dark": $dark,
+                        "pink": $pink
+                ),
+                $theme-colors
+);
+
+
+
+
+$second-font: semplicitapro, sans-serif;
+
+// -------------- -------------- --------------
+//  bootstrap
+// -------------- -------------- --------------
+$font-family-sans-serif: 'Arial', sans-serif;
+$font-weight-bold: 600 !default;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// GRID breakpoints BOOTSTRAP
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 1140px,
+        xl: 1400px,
+        xxl: 1880px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1340px,
+        xxl: 1530px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+$grid-row-columns:            6 !default;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Buttons
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// -------------- -------------- --------------
+//  normal
+// -------------- -------------- --------------
+$theme-colors-btn-hover: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors-btn-hover: map-merge(
+                (
+                        "primary": $white,
+                        "secondary": $secondary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "light": $light,
+                        "dark": $dark
+                ),
+                $theme-colors-btn-hover
+);
+
+$theme-colors-btn-outline-hover: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors-btn-outline-hover: map-merge(
+                (
+                        "primary": $white,
+                        "secondary": $secondary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "light": $light,
+                        "dark": $dark
+                ),
+                $theme-colors-btn-outline-hover
+);
+
+// -------------- -------------- --------------
+//  bootstrap
+// -------------- -------------- --------------
+$btn-padding-y: 0.875rem !default;
+$btn-padding-x: 1.563rem !default;
+$btn-font-family: $second-font !default;
+$btn-font-size: $font-12 !default; //
+
+$btn-padding-y-sm: 0.875rem !default;
+$btn-padding-x-sm: 1.563rem !default;
+$btn-font-size-sm: $font-11 !default;
+
+$btn-padding-y-lg: 0.875rem !default;
+$btn-padding-x-lg: 2.750rem !default;
+$btn-font-size-lg: $font-14 !default;
+
+// Allows for customizing button radius independently from global border radius
+
+$btn-border-radius: 3.125rem !default;
+$btn-border-radius-lg: 3.125rem !default;
+$btn-border-radius-sm: 3.125rem !default;
+
+$btn-transition: color .3s ease-in-out, background-color $global-transition-time ease-in-out, border-color $global-transition-time ease-in-out, box-shadow $global-transition-time ease-in-out !default;
+

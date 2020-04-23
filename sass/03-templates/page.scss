@@ -1,0 +1,41 @@
+.page {
+  &__content {
+    h1 {
+      color: $red-dark;
+      margin-bottom: 1.875rem;
+
+      span {
+        font-weight: $bold-weight;
+      }
+    }
+  }
+
+  &__intro {
+    img {
+      width: 40%;
+      height: auto;
+      float: right;
+      margin-left: 1.25rem;
+    }
+  }
+
+  &__sectionText {
+    .sectionText__title {
+      margin-bottom: 1.25rem;
+      font-weight: $semi-bold-weight;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 1.875rem;
+      }
+      &--red {
+        color: $red;
+      }
+    }
+    ul,
+    ol {
+      padding-left: 0.938rem;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

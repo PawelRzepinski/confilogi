@@ -1,0 +1,51 @@
+.page__sideBox {
+  border: 1px solid $form-gray-dark;
+  margin-bottom: 2.5rem;
+  .img__wrapper {
+    position: relative;
+    .label {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(10px, 10px) rotate(10deg);
+      background-color: $green;
+      color: $white;
+      font-size: $font-25;
+      font-weight: $bold-weight;
+      border-radius: 4px;
+      padding: .5rem;
+    }
+  }
+
+  .sideBox__textWrapper {
+    padding: 1.25rem 1.25rem 0 1.25rem;
+
+    .sideBox__title {
+      color: $red;
+      font-weight: $bold-weight;
+      width: 70%;
+      margin: 0 auto 1.25rem auto;
+      text-align: center;
+    }
+
+    .sideBox__text {
+      text-align: center;
+    }
+
+  }
+
+  .sideBox__stars {
+    padding: 0 1.25rem;
+    .starBox {
+      margin: 0 auto;
+      width: fit-content;
+      i {
+        color: $green;
+      }
+    }
+
+    p{
+      text-align: center;
+    }
+  }
+}

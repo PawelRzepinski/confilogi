@@ -1,0 +1,70 @@
+@mixin textBold {
+  font-weight: $bold-weight;
+}
+
+/*
+*   Headers
+*/
+h1,h2,h3,h4,h5,h6 {
+  line-height: 110%;
+  font-weight: $regular-weight;
+}
+
+h1 {
+  font-size: $font-32;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-38;
+  }
+}
+
+h2 {
+  font-size: $font-28;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-32;
+  }
+}
+
+h3 {
+  font-size: $font-24;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-28;
+  }
+}
+
+h4 {
+  font-size: $font-18;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-24;
+  }
+}
+
+h5 {
+  font-size: $font-16;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-18;
+  }
+}
+
+h6 {
+  font-size: $font-12;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-14;
+  }
+}
+
+/*
+*   Paragraphs
+*/
+
+.p--italic {
+  font-style: italic;
+}
+
+
+/*
+*  Span
+*/
+
+.span--bold {
+  @include textBold;
+}
